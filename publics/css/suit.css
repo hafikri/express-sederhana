@@ -1,0 +1,242 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  /* vertical-align: baseline; */
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+  font-family: "Open Sans", sans-serif;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Container-Fluid */
+.container-fluid {
+  min-height: 100vh;
+  background-color: #9c835f;
+  padding-bottom: 100px;
+}
+
+/* Header */
+/* .header {
+  padding: 20px 0;
+} */
+.header a {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  font-size: 40px;
+  font-weight: 700;
+  color: #724c21;
+}
+
+.header img {
+  height: 50px;
+  padding: 0 20px;
+}
+
+p.judul {
+  font-size: 36px;
+  font-weight: 700;
+  color: #f9b23d;
+}
+
+/* Game Area */
+.container.game-area {
+  width: 900px;
+  /* margin: 50px auto; */
+  /* padding: 20px; */
+  /* box-sizing: border-box; */
+}
+
+.game-area h2 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.player {
+  flex: 2;
+}
+
+.info {
+  flex: 1;
+}
+
+.info p {
+  color: #bd0000;
+  font-size: 52px;
+}
+
+.comp {
+  flex: 2;
+}
+
+.comp img,
+.player img {
+  box-sizing: border-box;
+  width: 110px;
+  padding: 15px;
+}
+
+ul {
+  padding-top: 30px;
+}
+
+.batu,
+.kertas,
+.gunting {
+  cursor: pointer;
+}
+
+.batu:hover,
+.kertas:hover,
+.gunting:hover,
+.active {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+.batu:active,
+.kertas:active,
+.gunting:active {
+  background-color: #c4c4c4;
+  border-radius: 10px;
+}
+
+.refresh a img {
+  width: 50px;
+}
+
+.refresh a:hover img {
+  transform: rotate(15deg);
+}
+
+.menang {
+  /* width: 90px; */
+  /* height: 75px; */
+  background-color: #4c9654;
+  border-radius: 10px;
+  padding: 30px 10px;
+  color: #fff;
+  font-size: 32px;
+  transform: rotate(-30deg);
+}

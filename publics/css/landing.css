@@ -1,0 +1,556 @@
+:root {
+  --mainColor: #fff;
+  --secondaryColor: #000;
+  --acsentColor: #ffb548;
+  --fontFamilySansSerif: "Open sans", sans-serif;
+  --fontFamilyDisplay: "Bebas Neue", cursive;
+}
+
+.tombol {
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-image: linear-gradient(to bottom, #ffb548, #f3af34);
+  color: var(--secondaryColor);
+  font-family: var(--fontFamilySansSerif);
+  padding-top: 8px;
+}
+
+/* Navbar */
+.navbar {
+  position: relative;
+  z-index: 1;
+}
+.navbar {
+  text-transform: uppercase;
+  font-weight: 800;
+  font-family: var(--fontFamilySansSerif);
+  background-color: var(--secondaryColor);
+}
+
+.navbar a {
+  color: var(--mainColor);
+}
+
+a.navbar-brand {
+  font-size: 24px;
+  color: var(--mainColor) !important;
+}
+
+.nav-item a {
+  font-size: 12px;
+  color: var(--mainColor) !important;
+}
+/* Akhir Navbar */
+
+/* Jumbotron */
+section.jumbotron {
+  background-image: url(../img/main-bg.jpg);
+  background-size: cover;
+  color: var(--mainColor);
+  padding-top: 100px;
+  margin-top: -1px;
+  position: relative;
+}
+
+.jumbotron .container {
+  position: relative;
+  z-index: 1;
+}
+
+.jumbotron::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+}
+
+.jumbotron {
+  margin-bottom: 0;
+}
+
+.jumbotron h1 {
+  font-family: var(--fontFamilyDisplay);
+  font-size: 42px;
+}
+
+.jumbotron p {
+  font-family: var(--fontFamilySansSerif);
+  font-size: 14px;
+}
+
+.button-down p {
+  font-size: 12px;
+  text-transform: uppercase;
+  color: var(--mainColor);
+  font-weight: 700;
+  margin-top: 100px;
+}
+
+.button-down a {
+  text-decoration: none;
+}
+
+.button-down img {
+  width: 35px;
+  margin-top: 15px;
+}
+
+/* Akhir Jumbotron */
+
+/* About & Gallery */
+.about-gallery {
+  background-image: url(../img/the-games-bg.jpg);
+  background-color: var(--secondaryColor);
+  /* height: 400px; */
+  position: relative;
+}
+
+.about-gallery .container {
+  padding: 100px 0;
+  color: var(--mainColor);
+  position: relative;
+  z-index: 1;
+}
+
+.about-gallery::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(farthest-side at left center, #ffffff00 35%, #00000000, #080a0b);
+  background-color: #0f0f0fde;
+  position: absolute;
+  bottom: 0;
+}
+
+.display-4,
+.display-2 {
+  font-family: var(--fontFamilyDisplay);
+  font-weight: 400;
+}
+
+.display-2 {
+  font-size: 60px;
+  line-height: 65px;
+  letter-spacing: 3px;
+  padding-bottom: 50px;
+}
+
+.display-4 {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 2px;
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+  opacity: 1;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -140px;
+  background-image: url(../img/switch-left.svg);
+  height: 50px;
+}
+
+.carousel-control-next-icon {
+  margin-right: -140px;
+  background-image: url(../img/switch-right.svg);
+  height: 50px;
+}
+/* Akhir About & Gallery */
+
+/* Feature */
+.feature {
+  background-image: url(../img/features.jpg);
+  height: 860px;
+  background-size: cover;
+}
+
+.jarak-atas {
+  padding-top: 200px;
+}
+
+.jarak-bawah {
+  padding-bottom: 300px;
+}
+.feature .container {
+  color: var(--mainColor);
+}
+
+.feature .display-2 {
+  line-height: 65px;
+}
+
+.accordion {
+  width: 100%;
+  padding: 0 5px;
+  /* border: 2px solid #6db5ff; */
+  cursor: pointer;
+  /* border-radius: 50px; */
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+.accordion .icon {
+  margin: 0 10px 0 0;
+  width: 30px;
+  height: 30px;
+  background: url(../img/toggle-circle.svg) no-repeat 8px 8px;
+}
+
+.accordion h5 {
+  font-size: 24px;
+  margin: 0;
+  padding: 3px 0 0 20px;
+  font-weight: 400;
+  font-family: var(--fontFamilySansSerif);
+  color: #ffb548;
+}
+
+.active .icon {
+  background: url(../img/toggle-ellipse.svg) no-repeat 8px;
+}
+
+.panel {
+  padding: 0 15px;
+  border-left: 1px solid var(--mainColor);
+  margin-left: 22px;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: var(--fontFamilySansSerif);
+  text-align: justify;
+  overflow: hidden;
+  max-height: 0;
+  transition: all 0.5s ease-in;
+}
+
+.panel p {
+  padding-left: 30px;
+  line-height: 32px;
+}
+
+/* Akhir Feature */
+
+/* System Requirement */
+
+.sysreq {
+  background-image: url(../img/requirements.jpg);
+  background-size: cover;
+  padding: 150px 0;
+}
+
+p.judul-sysreq {
+  font-size: 14px;
+  line-height: 0.5em;
+  font-weight: 400;
+  font-family: var(--fontFamilySansSerif);
+  margin-bottom: 0;
+  padding-bottom: 50px;
+}
+
+.sysreq h1.display-2,
+p.judul-sysreq,
+table td {
+  color: var(--mainColor);
+}
+
+.judul-table {
+  font-family: var(--fontFamilySansSerif);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--acsentColor);
+}
+/* Akhir System Requirement */
+
+/* Quotes */
+
+.quotes {
+  background-image: url(../img/scores.jpg);
+  padding: 150px 0;
+}
+
+.quotes h1.display-2 {
+  padding-bottom: 0;
+}
+
+.card {
+  font-family: var(--fontFamilySansSerif);
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08) !important;
+}
+
+.card.evan {
+  margin-left: 200px;
+}
+
+.card.jada {
+  margin-left: 100px;
+}
+
+.card.aaron {
+  margin-left: 150px;
+}
+
+h5.card-title {
+  color: var(--acsentColor);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+h6.card-subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--mainColor);
+}
+
+.card-text {
+  color: var(--mainColor);
+  margin-top: 24px;
+  margin-bottom: -20px;
+}
+
+/* Akhir Quotes */
+
+/* Subscribe */
+.subscribe {
+  background-color: #020202;
+  padding: 100px 0 200px;
+}
+
+.teks-subscribe {
+  padding-left: 130px;
+  color: var(--mainColor);
+}
+
+.tombol-input {
+  width: 428px;
+  height: 60px;
+  top: 510.7px;
+  background: rgba(255, 255, 255, 0.08);
+  /* color: var(--mainColor); */
+  border: none;
+  color: var(--acsentColor);
+}
+
+.teksmail {
+  color: var(--acsentColor);
+}
+
+/* Akhir Subscribe */
+
+/* Footer */
+footer {
+  background-color: #020202;
+}
+
+ul.nav_link {
+  margin: 0;
+  padding: 0;
+}
+
+.vav-link {
+  list-style: none;
+}
+
+.nav_link li {
+  display: inline-block;
+  padding: 0 50px 0 0;
+}
+
+.nav_link li a {
+  font-family: var(--fontFamilyDisplay);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+.social-icon img {
+  margin-left: 50px;
+}
+
+.nav_link_bottom {
+  list-style: none;
+}
+
+.nav_link_bottom li {
+  display: inline-block;
+}
+
+.nav_link_bottom li a {
+  font-family: var(--fontFamilyDisplay);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--mainColor);
+  text-decoration: none;
+}
+
+/* Akhir Footer */
+
+/* Desktop Version */
+@media (min-width: 992px) {
+  .tombol {
+    width: 260px;
+    height: 60px;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-image: linear-gradient(to bottom, #ffb548, #f3af34);
+    color: var(--secondaryColor);
+    font-family: var(--fontFamilySansSerif);
+    padding-top: 15px;
+  }
+
+  /* Navbar */
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .navbar-brand {
+    margin-right: -300px;
+  }
+
+  /* Akhir Navbar */
+
+  /* Jumbotron */
+  section.jumbotron {
+    padding-top: 315px;
+    margin-top: -75px;
+    margin-bottom: 0;
+  }
+  .jumbotron h1 {
+    font-family: var(--fontFamilyDisplay);
+    font-size: 80px;
+    font-weight: 700;
+    line-height: 82px;
+    letter-spacing: 3px;
+    margin-bottom: 50px;
+  }
+
+  .jumbotron p {
+    font-family: var(--fontFamilySansSerif);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+  }
+
+  .button-down p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: var(--mainColor);
+    font-weight: 700;
+    margin-top: 285px;
+    margin-bottom: -10px;
+  }
+  /* Akhir Jumbotron */
+
+  /* About & Gallery */
+  .about-gallery {
+    background-image: url(../img/the-games-bg.jpg);
+    background-color: var(--secondaryColor);
+    height: 960px;
+  }
+
+  .about-gallery .container {
+    padding-top: 280px;
+    color: var(--mainColor);
+  }
+
+  .display-4,
+  .display-2 {
+    font-family: var(--fontFamilyDisplay);
+    font-weight: 400;
+  }
+
+  .display-2 {
+    font-size: 80px;
+    line-height: 65px;
+    letter-spacing: 3px;
+  }
+
+  .display-4 {
+    font-size: 24px;
+    line-height: 28px;
+    letter-spacing: 2px;
+  }
+
+  .carousel {
+    padding-top: 30px;
+  }
+
+  /* Akhir About & Gallery */
+
+  /* Feature */
+
+  .feature .container {
+    color: var(--mainColor);
+  }
+
+  .feature .display-2 {
+    line-height: 65px;
+  }
+
+  .accordion {
+    width: 100%;
+    padding: 0 5px;
+    /* border: 2px solid #6db5ff; */
+    cursor: pointer;
+    /* border-radius: 50px; */
+    display: flex;
+    margin: 10px 0;
+    align-items: center;
+  }
+
+  .accordion .icon {
+    margin: 0 10px 0 0;
+    width: 30px;
+    height: 30px;
+    background: url(../img/toggle-circle.svg) no-repeat 8px 8px;
+  }
+
+  .accordion h5 {
+    font-size: 24px;
+    margin: 0;
+    padding: 3px 0 0 20px;
+    font-weight: 400;
+    font-family: var(--fontFamilySansSerif);
+    color: #ffb548;
+  }
+
+  .active .icon {
+    background: url(../img/toggle-ellipse.svg) no-repeat 8px;
+  }
+
+  .panel {
+    padding: 0 15px;
+    border-left: 1px solid var(--mainColor);
+    margin-left: 22px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: var(--fontFamilySansSerif);
+    text-align: justify;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.5s ease-in;
+  }
+
+  .panel p {
+    padding-left: 30px;
+    line-height: 32px;
+  }
+
+  /* Akhir Feature */
+}
