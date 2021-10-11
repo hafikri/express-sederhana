@@ -26,6 +26,15 @@ app.use("*", (req, res) => {
   res.status(404).redirect("/404");
 });
 
+app.use((err, req, res, next) => {
+  const code = err.code;
+  const message = err.message;
+
+  return res.status(code).json({
+    message: message,
+  });
+});
+
 app.listen(port, () => {
   console.log(`Server ready on port ${port}`);
 });
