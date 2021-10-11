@@ -2,7 +2,14 @@
   {
     "username": "hello",
     "password": "world",
-    "nama": "Muhammad Fathinul Fikri AlHafid",
+    "nama": "Muhammad Fathinul",
+    "kelas": "UI UX",
+    "alamat": "Jakarta"
+  },
+  {
+    "username": "hello",
+    "password": "world",
+    "nama": "Fikri AlHafid",
     "kelas": "Fullstack Website Developer",
     "alamat": "Tangerang"
   }

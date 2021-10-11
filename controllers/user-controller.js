@@ -4,7 +4,12 @@ const db = require("../data/db.json");
 
 module.exports = {
   data: (req, res) => {
-    res.json(db);
+    res.status(200).json({
+      code: 200,
+      message: "success get all data user",
+      data: db,
+      error: null,
+    });
   },
   kirimData: (req, res, next) => {
     try {
